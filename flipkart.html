@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="flipkart.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="Logo" class="navitem">
+            <img src="images/logo.png" alt="">
+        </div>
+        <div id="Search" class="navitem">
+            <input type="text" name="mysearch" id="Searchbox" placeholder="Search for products brands and more">
+            <div id="Searchicon">
+                <i class="fi-xnsuhl-search"></i>
+            </div>
+        </div>
+        <div id="Login" class="navitem">
+            <input id="Loginbutton" type="button" value="Login" >
+        </div>
+        <div id="Seller" class="navitem">
+            Become a Seller
+        </div>
+        <div id="More" class="navitem">
+            <select name="more" id="Moreoption">
+                <option value="myoption">More</option>
+        </select></div>
+        <div id="Cart" class="navitem">
+            <i id="carticon" class="fi-xwsuhl-shopping-cart-solid"></i>
+            <div id="Carttext">Cart
+            </div>
+        </div>
+    </nav>
+
+    <script defer src="https://friconix.com/cdn/friconix.js"> </script>
+
+
+    <section id="shopitem">
+        <div id="Grocery" class="type">
+            <img src="images/grocery.png" alt="">
+            <div id="Grocerytext">
+                Grocery
+            </div>
+        </div>
+
+        <div id="Mobiles" class="type">
+            <img src="images/mobiles.png" alt="">
+            <div id="Mobiletext">Mobiles
+            </div>
+        </div>
+        
+        <div id="Fashion" class="type">
+            <img src="images/fashion.png" alt="">
+            <select style="font-weight: 500" class="select" name="" id="">
+                <option   value="">Fashion</option>
+            </select>
+        </div>
+        
+        <div id="Electronics" class="type">
+            <img src="images/electronics.png" alt="">
+            <select style="font-weight: 500" class="select" name="electronics" id="">
+                <option value="">Electronics</option>
+            </select>
+        </div>
+
+        <div id="Home" class="type">
+            <img src="images/home.jpg" alt="">
+            <select style="font-weight: 500" class="select" name="" id="">
+                <option value="">Home</option>
+            </select>
+        </div>
+
+        <div id="appliances" class="type">
+            <img src="images/appliances.png" alt="">
+            <div id="Appliancestext">Appliances</div>
+        </div>
+
+    </section>
+
+    <div id="Slider">
+        <div id="slide1" class="Slider">
+            <img id="bannerimage" class="img" src="images/Banner2.webp" alt="">
+        </div>
+         <div id="slide2" class="Slider">
+            <img src="images/banner4.webp" alt="" class="img" >
+         </div>
+         <div id="slide3" class="Slider">
+            <img class="img" src="images/Banner1.webp" alt="">
+         </div>
+
+         <span id="leftarrow" class="arrow" onclick="controller(-1)">&leftarrow; </span>
+         <span id="rightarrow" class="arrow" onclick="controller(1)">&rightarrow;</span>
+    </div>
+    <div id="BESTOFtext">
+        <p>BEST OF ELECTRONICS</p>
+    </div>
+    <div id="tray">
+        <div class="product">
+             <img id="image1" class="images" src="images/1-2a.webp" onmouseover="change(0)" onmouseout="reverse(0)" alt="">
+             <div class="detail">
+                <span class="text">Rs59,990</span>
+                <button class="btn">Buy Now</button>
+             </div>
+        </div>
+        <div class="product">
+            
+            <img src="images/1-3a.webp" alt="" class="images" onmouseover="change(1)" onmouseout="reverse(1)" >
+            <div class="detail">
+                <span class="text">Rs 30,100</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/1-4a.webp" alt="" class="images" onmouseover="change(2)" onmouseout="reverse(2)" >
+            <div class="detail">
+                <span class="text">Rs 89,990</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="BEAUTY">
+        <p>BEAUTY,FOOD,TOYS AND MORE</p>
+    </div>
+    <div id="tray">
+        <div class="product">
+             <img  class="images" src="images/1-5a.webp" alt="" onmouseover="change(3)" onmouseout="reverse(3)" >
+             <div class="detail">
+                <span class="text">Rs19,990</span>
+                <button class="btn">Buy Now</button>
+             </div>
+        </div>
+        <div class="product">
+            
+            <img src="Camera.webp" alt="" class="images" onmouseover="change(4)" onmouseout="reverse(4)" >
+            <div class="detail">
+                <span class="text">Rs 34,100</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/shoes1.webp" alt="" class="images" onmouseover="change(5)" onmouseout="reverse(5)" >
+            <div class="detail">
+                <span class="text">Rs 9,990</span>
+                <button class="btn">Buy Now</button>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="detail">
+        <div>   
+            <h3 class="heading">Flipkart: The One-stop Shopping Destination</h3>
+            <div class="descripti">is revolutionizing the way we all shop in India. Why do you want to hop from one store to another in search of the latest phone when you can find it on the Internet in a single click? Not only mobiles. Flipkart houses everything you can possibly imagine, from trending electronics like laptops, tablets, smartphones, and mobile accessories to in-vogue fashion staples like shoes, clothing and lifestyle accessories; from modern furniture like sofa sets, dining tables, and wardrobes to appliances that make your life easy like washing machines, TVs, ACs, mixer grinder juicers and other time-saving kitchen and small appliances; from home furnishings like cushion covers, mattresses and bedsheets to toys and musical instruments, we got them all covered. You name it, and you can stay assured about finding them all here. For those of you with erratic working hours, Flipkart is your best bet. Shop in your PJs, at night or in the wee hours of the morning. This e-commerce never shuts down.<br><br><br>
+
+                What's more, with our year-round shopping festivals and events, our prices are irresistible. We're sure you'll find yourself picking up more than what you had in mind. If you are wondering why you should shop from Flipkart when there are multiple options available to you, well, the below will answer your question.
+            </div>
+            <h3 class="heading">Flipkart Plus</h3>
+            <div class="descripti">world of limitless possibilities awaits you - Flipkart Plus was kickstarted as a loyalty reward programme for all its regular customers at zero subscription fee. All you need is 500 supercoins to be a part of this service. For every 100 rupees spent on Flipkart order, Plus members earns 4 supercoins & non-plus members earn 2 supercoins. Free delivery, early access during sales and shopping festivals, exchange offers and priority customer service are the top benefits to a Flipkart Plus member. In short, earn more when you shop more!<br><br<br>
+
+                What's more, you can even use the Flipkart supercoins for a number of exciting services, like:<br>
+                An annual Zomato Gold membership<br>
+                An annual Hotstar Premium membership<br>
+                6 months Gaana plus subscription<br>
+                Rupees 550 instant discount on flights on ixigo<br>
+                Check out https://www.flipkart.com/plus/all-offers for the entire list. Terms and conditions apply.
+            </div>
+            <h3 class="heading">No Cost EMI</h3>
+            <div class="descripti">In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances, furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions apply.</div>
+            <h3 class="heading">EMI on Debit Cards</h3>
+            <div class="descripti">Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone, Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.</div>
+            <h3 class="heading">Mobile Exchange Offers</h3>
+            <div class="descripti">Get an instant discount on the phone that you have been eyeing on. Exchange your old mobile for a new one after the Flipkart experts calculate the value of your old phone, provided it is in a working condition without damage to the screen. If a phone is applicable for an exchange offer, you will see the 'Buy with Exchange' option on the product description of the phone. So, be smart, always opt for an exchange wherever possible. Terms and conditions apply.</div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="column">
+            <h4>ABOUT</h4>
+            <ul>
+                <li>Contact Us</li>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Flipkart Stories</li>
+                <li>Press</li>
+                <li>Flipkart</li>
+                <li>Wholesale</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>HELP</h4>
+            <ul>
+                <li>Payments</li>
+                <li>Shipping</li>
+                <li>Cancellation & Returns</li>
+                <li>FAQ</li>
+                <li>Report</li>
+                <li>Infringement</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>POLICY</h4>
+            <ul>
+                <li>Return Policy</li>
+                <li>Term of Use</li>
+                <li>Security</li>
+                <li>Privacy</li>
+                <li>Sitemap</li>
+                <li>EPR Compliance</li>
+            </ul>
+        </div>
+        <div class="column">
+            <h4>SOCIAL</h4>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>You Tube</li>
+            </ul>
+        </div>
+    </footer>
+     
+
+    <script src="flipkart.js"></script>
+</body>
+</html>
